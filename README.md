@@ -113,3 +113,55 @@ LGAs identified as having minimal uncovered areas (≤ 2 km²) were symbolized s
 The final map was styled using a **graduated orange-to-red color scheme**, where darker shades represent higher population exposure. Fire station locations and their 5 km coverage buffers were overlaid to provide spatial context and enhance interpretability.
 
 This visualization enables easy identification of high-risk areas and supports informed decision-making for emergency service planning and resource allocation.
+
+## 📊 Key Findings
+
+- Approximately **5.9 million people** in Lagos State live outside a 5 km radius of the nearest fire station, indicating significant gaps in emergency service accessibility.
+
+- **Ojo and Ikorodu LGAs** were identified as the most affected areas, each with **over 1 million people** living outside fire station coverage.
+
+- Notably, **Ojo LGA has no fire station within its boundary**, further increasing its vulnerability to fire-related incidents.
+
+- The spatial distribution of underserved populations shows that fire station accessibility is uneven, with some densely populated areas lacking adequate coverage.
+
+- A few LGAs — including **Ikeja, Surulere, Apapa, Ajeromi-Ifelodun, and Oshodi-Isolo** — recorded only **minimal uncovered areas (≤ 2 km²)**. In particular, **Ikeja and Surulere had extremely small uncovered extents (~0.02 km²)**, which are practically negligible in the context of this analysis.
+
+- While some LGAs have only minimal uncovered regions, others experience substantial service gaps that could significantly impact emergency response times.
+
+- These findings highlight the urgent need for improved fire station distribution and strategic planning to ensure better coverage across rapidly growing urban areas.
+
+## 🗺️ Map Output
+
+The final map presents the spatial distribution of fire station coverage across Lagos State, highlighting areas outside the 5 km service radius and the population affected within those regions.
+
+LGAs are classified based on the number of people living outside fire station coverage, using a graduated orange-to-red color scheme where darker shades indicate higher population exposure.
+
+Fire station locations and their corresponding 5 km buffer zones are overlaid to provide spatial context and clearly distinguish between covered and underserved areas.
+
+![Lagos Fire Station Coverage Map](output/lagos-fire-station-coverage-map.png)
+
+## ⚙️ Tools & Technologies
+
+- **QGIS** – for spatial analysis, data processing, and map visualization  
+- **QuickOSM Plugin (QGIS)** – for extracting fire station data from OpenStreetMap  
+- **WorldPop** – for high-resolution population data (2026 estimates)  
+- **HDX (OCHA)** – for administrative boundary data  
+- **Google Maps & Google Earth Pro** – for supplementing and validating fire station locations  
+
+**Spatial Analysis Techniques:**
+- Buffer Analysis  
+- Overlay Analysis (Difference)  
+- Zonal Statistics  
+- Data Cleaning and Deduplication  
+- Rule-Based Classification and Cartographic Visualization
+
+## 📌 Conclusion
+
+This project demonstrates how geospatial analysis can be applied to assess emergency service accessibility and identify critical infrastructure gaps within an urban environment.
+
+By integrating fire station locations with high-resolution population data, the analysis revealed that a significant portion of Lagos State’s population resides outside effective fire station coverage, with certain LGAs experiencing severe service deficits.
+
+These findings highlight the importance of data-driven planning in improving emergency response systems and ensuring more equitable distribution of essential services across rapidly growing cities.
+
+## 👤 Author
+Ohi
