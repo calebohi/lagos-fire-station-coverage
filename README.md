@@ -58,7 +58,7 @@ A segment value of 20 was used to produce smoother and more accurate circular bu
 
 The resulting buffer layer represents areas with potential access to fire station services, while regions outside the buffer were considered underserved and used for further population analysis.
 
-![Buffer Analysis](output/buffer_analysis.png)
+<img src="images/buffer_tool.jpg" width="85%">
 
 ### 4. Population Analysis
 #### 4.1 Identifying Uncovered Areas
@@ -67,7 +67,7 @@ To determine areas without fire station coverage, the “Difference” tool in Q
 
 The Lagos State boundary was set as the input layer, while the 5 km buffer layer was used as the overlay. This operation subtracts the buffer (covered areas) from the Lagos boundary, resulting in polygons representing areas outside fire station coverage.
 
-![Uncovered Areas - Difference Tool](output/difference_tool.png)
+<img src="images/difference_tool.jpg" width="85%">
 #### 4.2 Extracting Population Values
 
 To quantify the population within uncovered areas, the “Zonal Statistics” tool was applied.
@@ -76,7 +76,7 @@ The uncovered areas layer was used as the input (zones), while the lagos populat
 
 This process generated a new attribute field containing population values for uncovered areas within each Local Government Area (LGA), enabling a spatial assessment of population exposure to limited fire station coverage.
 
-![Zonal Statistics](output/zonal_statistics.png)
+<img src="images/zonal_stats.jpg" width="85%">
 
 #### 4.3 Filtering Minimal Uncovered Areas
 
@@ -95,6 +95,9 @@ To implement this:
 This converts area from square meters to square kilometers and rounds the values to two decimal places.
 
 LGAs with uncovered areas less than or equal to 2 km² were classified as minimal and excluded from the main analysis. This step ensures that the analysis focuses on areas with meaningful service gaps rather than minor spatial artifacts.
+
+<img src="images/field_calculator.jpg" width="85%">
+
 #### 4.4 Population Classification and Mapping
 
 To effectively communicate the spatial distribution of populations outside fire station coverage, the results from the zonal statistics were classified into meaningful population ranges.
@@ -114,9 +117,13 @@ The final map was styled using a graduated orange-to-red color scheme, where dar
 
 This visualization enables easy identification of high-risk areas and supports informed decision-making for emergency service planning and resource allocation.
 
+<img src="images/rule_based_styling.jpg" width="85%">
+
 ## 📊 Key Findings
 
-- Approximately **5.9 million people** in Lagos State live outside a 5 km radius of the nearest fire station, indicating significant gaps in emergency service accessibility.
+- Approximately **5.9 million people** in Lagos State were identified as living outside a 5 km radius of the nearest fire station, based on the sum value obtained from the Statistics panel.
+
+<img src="images/statistics_function.jpg" width="85%">
 
 - **Ojo and Ikorodu LGAs** were identified as the most affected areas, each with **over 1 million people** living outside fire station coverage.
 
@@ -138,7 +145,7 @@ LGAs are classified based on the number of people living outside fire station co
 
 Fire station locations and their corresponding 5 km buffer zones are overlaid to provide spatial context and clearly distinguish between covered and underserved areas.
 
-![Lagos Fire Station Coverage Map](output/lagos-fire-station-coverage-map.png)
+<img src="images/lagos_state_fire_station_coverage.png" width="85%">
 
 ## ⚙️ Tools & Technologies
 
