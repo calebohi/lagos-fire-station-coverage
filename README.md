@@ -110,7 +110,7 @@ These classes were selected to highlight variations in population exposure and t
 
 LGAs identified as having minimal uncovered areas (≤ 2 km²) were symbolized separately to avoid visual clutter and ensure that the analysis focuses on regions with significant service gaps.
 
-The final map was styled using a **graduated orange-to-red color scheme**, where darker shades represent higher population exposure. Fire station locations and their 5 km coverage buffers were overlaid to provide spatial context and enhance interpretability.
+The final map was styled using a graduated orange-to-red color scheme, where darker shades represent higher population exposure. Fire station locations and their 5 km coverage buffers were overlaid to provide spatial context and enhance interpretability.
 
 This visualization enables easy identification of high-risk areas and supports informed decision-making for emergency service planning and resource allocation.
 
@@ -124,7 +124,7 @@ This visualization enables easy identification of high-risk areas and supports i
 
 - The spatial distribution of underserved populations shows that fire station accessibility is uneven, with some densely populated areas lacking adequate coverage.
 
-- A few LGAs — including **Ikeja, Surulere, Apapa, Ajeromi-Ifelodun, and Oshodi-Isolo** — recorded only **minimal uncovered areas (≤ 2 km²)**. In particular, **Ikeja and Surulere had extremely small uncovered extents (~0.02 km²)**, which are practically negligible in the context of this analysis.
+- A few LGAs - including **Ikeja, Surulere, Apapa, Ajeromi-Ifelodun, and Oshodi-Isolo**, recorded only minimal uncovered areas (≤ 2 km²). In particular, **Ikeja and Surulere had extremely small uncovered extents (~0.02 km²)**, which are practically negligible in the context of this analysis.
 
 - While some LGAs have only minimal uncovered regions, others experience substantial service gaps that could significantly impact emergency response times.
 
